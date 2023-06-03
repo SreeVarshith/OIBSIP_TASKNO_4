@@ -2,11 +2,10 @@ import java.util.*;
 
 class onlineexam{
     static String username="varshith";
-     static String password="9684";
-      static String  p;
-     static  String  q;
+    static String password="9684";
+    static String  p;
+    static  String  q;
     public static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args) {
         String x;
         System.out.println("**********************************");
@@ -158,14 +157,21 @@ class Exam {
         }, 0, 1000);
     }
 
-    public static void waitForTimerOrAutoSubmit(Scanner sc) {
+    public static void waitForTimerOrAutoSubmit(Scanner sc)
+     {
         System.out.println("\nPress 's' to submit your answers (auto-submit after " + questionTimeLimit + " seconds):");
         String input = sc.next();
-        if (input.equalsIgnoreCase("s")) {
+        if (input.equals("s")) {
             System.out.println("\nSubmitting your answers...");
             closeExamSession();
+            onlineexam.menu();
         }
-    }
+        else
+            {
+                System.out.println("Invalid Input...Enter 's' ");
+            }
+            
+        }
 
     public static void closeExamSession() {
         System.out.println("\n--- Exam Summary ---");
