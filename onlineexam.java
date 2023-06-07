@@ -101,10 +101,6 @@ class Exam
                 closeExam();
                 break;
             }
-            else
-            {
-                onlineexam.menu();
-            }
         }
     }
 
