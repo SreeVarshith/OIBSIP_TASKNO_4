@@ -21,7 +21,7 @@ class Exam
     public static String[] answers;
     public static int questionCount = 10;
     public static final int questionTimeLimit = 5; // seconds
-    public static final int totalExamTime = 60; // Total exam duration in seconds
+    public static final int totalExamTime = 80; // Total exam duration in seconds
 
     public static void startExam() 
     {
