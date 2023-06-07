@@ -98,7 +98,6 @@ class Exam
                 long end_time = System.currentTimeMillis();
                 int elapsedTime = (int) ((end_time - st_time) / 1000);
                 rt -= elapsedTime;
-                closeExam();
                 break;
             }
         }
