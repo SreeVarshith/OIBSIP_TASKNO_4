@@ -188,7 +188,7 @@ class onlineexam{
         } else if (x.equals("n") || x.equals("N")) {
             System.out.println("OK...Thank you for visiting the page");
         } else {
-            System.out.println("Invalid Letterv");
+            System.out.println("Invalid Letter");
         }
     }
 
